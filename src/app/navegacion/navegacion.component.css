@@ -14,6 +14,10 @@
   background: inherit;
 }
 
+.mat-toolbar{
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
@@ -21,10 +25,23 @@
 }
 
 a:hover {
-  background-color: #3f51b5;
+  background-color: #0A58CA;
   color: #ffffff;
 }
 
 .mdc-list-item__primary-text{
   color: #fff;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  justify-content: space-between;
+}
+
+/* card */
+.card-header{
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.card-title {
+  color: #0A58CA;
 }

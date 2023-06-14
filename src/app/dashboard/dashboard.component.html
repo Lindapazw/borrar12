@@ -1,10 +1,48 @@
 <div class="grid-container">
   <h1 class="mat-h1">Bienvenido de nuevo</h1>
 
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+  <div class="d-flex justify-content-between mb-4">
+    <div class="d-inline-block card" style="width: 15rem;">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-body-secondary">ITR tips</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">ver tips</a>
+      </div>
+    </div>
 
-    </mat-grid-tile>
-  </mat-grid-list>
+    <div class="d-inline-block card" style="width: 15rem;">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-body-secondary">ITR tips</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">ver tips</a>
+      </div>
+    </div>
+
+    <div class="d-inline-block card" style="width: 15rem;">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-body-secondary">ITR tips</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">ver tips</a>
+      </div>
+    </div>
+
+    <div class="d-inline-block card" style="width: 15rem;">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-body-secondary">ITR tips</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">ver tips</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5 class="card-header">últimas noticias</h5>
+    <div class="card-body">
+      <h5 class="card-title">¡Atención, equipo de Angular!</h5>
+      <p class="card-text">¿Están listos para llevar sus habilidades al siguiente nivel? ¡Tenemos emocionantes noticias para ustedes! Estamos encantados de anunciar un curso de Angular especialmente diseñado para nuestro increíble equipo de Angular.</p>
+      <p class="card-text">En este curso, exploraremos los aspectos clave de Angular, desde los conceptos básicos hasta técnicas avanzadas. Aprenderemos cómo crear aplicaciones web potentes y dinámicas utilizando las mejores prácticas de desarrollo de Angular.</p>
+      <a href="#" class="btn btn-primary">ver recurso</a>
+    </div>
+  </div>
 
 </div>

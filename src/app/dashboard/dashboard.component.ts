@@ -2,15 +2,16 @@ import { Component, inject } from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 
+import { NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  private breakpointObserver = inject(BreakpointObserver);
+  public breakpointObserver = inject(BreakpointObserver);
 
-  /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
@@ -24,4 +25,14 @@ export class DashboardComponent {
       ];
     })
   );
+
+  constructor(public modalService: NgbModal) { }
+
+  openModal(content: any) {
+    const modalOptions: NgbModalOptions = {
+      scrollable: true
+    };
+
+    this.modalService.open(content, modalOptions);
+  }
 }
